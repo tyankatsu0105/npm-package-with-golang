@@ -27,7 +27,6 @@
   },
   "goBinary": {
     "name": "npm-package-with-golang",
-    "path": "./bin",
-    "url": "https://github.com/tyankatsu0105/npm-package-with-golang/releases/download/v{{version}}/npm-package-with-golang_v{{version}}-SNAPSHOT_{{platform}}_{{arch}}.tar.gz"
+    "path": "./bin"
   }
 }
