@@ -25,6 +25,4 @@ archives:
       - goos: windows
         format: zip
 release:
-  github:
-    owner: tyankatsu0105
-    name: npm-package-with-golang
+  prerelease: auto
