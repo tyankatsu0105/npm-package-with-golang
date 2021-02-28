@@ -1,2 +1,2 @@
-build:
-	go build -o main
+release:
+	npm run release --dry-run
