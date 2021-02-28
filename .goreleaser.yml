@@ -1,0 +1,8 @@
+builds:
+  - binary: npm-package-with-golang
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64

@@ -1,0 +1,33 @@
+{
+  "name": "@tyankatsu0105/npm-package-with-golang",
+  "version": "0.0.0",
+  "description": "A sample npm package with golang",
+  "keywords": [],
+  "homepage": "https://github.com/tyankatsu0105/npm-package-with-golang#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/npm-package-with-golang/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/npm-package-with-golang.git"
+  },
+  "license": "MIT",
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall",
+    "release": "shipjs prepare"
+  },
+  "dependencies": {
+    "go-npm": "^0.1.9"
+  },
+  "devDependencies": {
+    "shipjs": "0.23.0"
+  },
+  "goBinary": {
+    "name": "npm-package-with-golang",
+    "path": "./bin",
+    "url": "https://github.com/tyankatsu0105/npm-package-with-golang/releases/download/v{{version}}/npm-package-with-golang_v{{version}}-SNAPSHOT_{{platform}}_{{arch}}.tar.gz"
+  }
+}
