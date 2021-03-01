@@ -14,6 +14,10 @@
   "license": "MIT",
   "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
   "main": "index.js",
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "postinstall": "go-npm install",
     "preuninstall": "go-npm uninstall"

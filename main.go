@@ -5,5 +5,5 @@ import (
 )
 
 func main()  {
-	log.Println("aaa")
+	log.Println("aaaaaaaaaaaaaaaaaaa")
 }
