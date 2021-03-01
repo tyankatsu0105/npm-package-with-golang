@@ -21,6 +21,6 @@ builds:
 
 archives:
   - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
-    format: zip
+    format: tar.zip
 release:
   prerelease: auto
