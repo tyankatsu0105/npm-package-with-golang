@@ -1,28 +1,26 @@
 project_name: npm-package-with-golang
 env:
   - GO111MODULE=on
+
 before:
   hooks:
     - go mod tidy
+
 builds:
   - main: .
     binary: npm-package-with-golang
-    ldflags:
-      - -s -w
-      - -X main.Version={{.Version}}
-      - -X main.Revision={{.ShortCommit}}
     env:
       - CGO_ENABLED=0
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - 386
+
 archives:
   - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
-    replacements:
-      darwin: darwin
-      linux: linux
-      windows: windows
-      386: i386
-      amd64: amd64
-    format_overrides:
-      - goos: windows
-        format: zip
+  - format: zip
 release:
   prerelease: auto

@@ -6,10 +6,12 @@ npx @tyankatsu0105/npm-package-with-golang
 
 ## develop
 
-### build
+### release
+
+Please check Makefile
 
 ```bash
-make build
+make release-xxx
 ```
 
 ## MEMO
