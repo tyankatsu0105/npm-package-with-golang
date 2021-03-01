@@ -1,5 +1,9 @@
 ## Usage
 
+```bash
+npx @tyankatsu0105/npm-package-with-golang
+```
+
 ## develop
 
 ### build
