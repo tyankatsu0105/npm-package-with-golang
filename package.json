@@ -16,14 +16,13 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "go-npm install",
-    "preuninstall": "go-npm uninstall",
-    "release": "shipjs prepare"
+    "preuninstall": "go-npm uninstall"
   },
   "dependencies": {
     "go-npm": "^0.1.9"
   },
-  "devDependencies": {
-    "shipjs": "0.23.0"
+  "publishConfig": {
+    "access": "public"
   },
   "goBinary": {
     "name": "npm-package-with-golang",
